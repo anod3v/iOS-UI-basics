@@ -14,6 +14,11 @@ class NewsFeedViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     var allPosts: [Post?] = []
     
+<<<<<<< HEAD
+=======
+    //    var tempPosts: [Post?] = []
+    
+>>>>>>> master
     var shuffledPosts: [Post?] = []
     
     @IBOutlet weak var newsFeedCollectionView: UICollectionView!
