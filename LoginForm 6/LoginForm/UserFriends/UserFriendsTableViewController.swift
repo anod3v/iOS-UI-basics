@@ -145,21 +145,8 @@ class UserFriendsTableViewController: UITableViewController {
         let currentCell = tableView.cellForRow(at: indexPath) as! UserFriendsTableViewCell
         let friendPhotoVC = storyboard?.instantiateViewController(withIdentifier: "FriendPhotosCollectionViewController") as! FriendPhotosCollectionViewController
         friendPhotoVC.selectedFriend = currentCell.friend
-<<<<<<< HEAD
 //        friendPhotoVC.friends = friends
         self.show(friendPhotoVC, sender: nil)
-=======
-//        self.show(friendPhotoVC, sender: nil)
-        
-        UIView.animate(withDuration: 1,
-                       delay: 0,
-                       usingSpringWithDamping: 0.4,
-                       initialSpringVelocity: 0,
-                       options: [.curveEaseOut],
-                       animations: {
-                        currentCell.friendImage!.bounds.size = .zero
-        })
->>>>>>> master
         
     }
     

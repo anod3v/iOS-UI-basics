@@ -402,7 +402,6 @@
             </objects>
             <point key="canvasLocation" x="5157" y="-13"/>
         </scene>
-<<<<<<< HEAD
         <!--Image Scroll View Controller-->
         <scene sceneID="yDH-2b-NyT">
             <objects>
@@ -433,8 +432,6 @@
             </objects>
             <point key="canvasLocation" x="6054" y="-13"/>
         </scene>
-=======
->>>>>>> master
         <!--Groups Table View Controller-->
         <scene sceneID="Lpk-hB-EVd">
             <objects>
@@ -445,7 +442,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupCell" id="Y2H-jX-GjI" customClass="GroupsTableViewCell" customModule="LoginForm" customModuleProvider="target">
-<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="28" width="414" height="53.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y2H-jX-GjI" id="A4c-qY-0XF">
@@ -454,16 +450,6 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GroupLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaI-Kj-XxL">
                                             <rect key="frame" x="120" y="16" width="174" height="21.666666666666671"/>
-=======
-                                <rect key="frame" x="0.0" y="28" width="414" height="53.333332061767578"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y2H-jX-GjI" id="A4c-qY-0XF">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="53.333332061767578"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GroupLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaI-Kj-XxL">
-                                            <rect key="frame" x="120" y="15.999999999999998" width="174" height="21.333333333333329"/>
->>>>>>> master
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -504,7 +490,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userGroupsCell" id="TZg-IG-RYX" customClass="UserGroupsTableViewCell" customModule="LoginForm" customModuleProvider="target">
-<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="28" width="414" height="53.333332061767578"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TZg-IG-RYX" id="qm5-HK-0IM">
@@ -513,16 +498,6 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserGroupLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ln-cU-UMJ">
                                             <rect key="frame" x="120" y="15.999999999999998" width="174" height="21.333333333333329"/>
-=======
-                                <rect key="frame" x="0.0" y="28" width="414" height="53"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TZg-IG-RYX" id="qm5-HK-0IM">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserGroupLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ln-cU-UMJ">
-                                            <rect key="frame" x="120" y="16" width="174" height="21"/>
->>>>>>> master
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>

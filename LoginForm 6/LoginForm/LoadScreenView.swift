@@ -15,11 +15,7 @@ class LoadScreenView: UIView {
     @IBOutlet weak var mainView: UIView!
     
     
-<<<<<<< HEAD
     let shapeLayer = CAShapeLayer()
-=======
-    let lay = CAReplicatorLayer()
->>>>>>> master
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,16 +31,11 @@ class LoadScreenView: UIView {
         let viewFromXib = Bundle.main.loadNibNamed("LoadScreenView", owner: self, options: nil)![0] as! UIView
         viewFromXib.frame = self.bounds
         addSubview(viewFromXib)
-<<<<<<< HEAD
         
-=======
-
->>>>>>> master
     }
     
     override func didMoveToSuperview() {
         setUpLayer()
-<<<<<<< HEAD
         layer.addSublayer(shapeLayer)
     }
     
@@ -102,60 +93,5 @@ class LoadScreenView: UIView {
         
     }
     
-=======
-        spinnerView.layer.addSublayer(lay)
-        
-        var secondsCount = 0
-        
-//        let timer = Timer.init(timeInterval: 1, repeats: true) { (timer) in
-//            self.superview?.superview?.isUserInteractionEnabled = false
-//            secondsCount += 1
-//            if secondsCount == 20 {
-//                timer.invalidate()
-//                hideView()
-//                self.superview?.superview?.isUserInteractionEnabled = true
-//            }
-//        }
-//        
-//        RunLoop.main.add(timer, forMode: RunLoop.Mode.default)
-        
-        func hideView() {
-            
-            self.isHidden = true
-            
-        }
-        
-    }
-    
-    
-    
-    func setUpLayer() {
-        
-        let superBounds = spinnerView.bounds
-        
-        let numberOfDots = 5
-        
-        let spacing: CGFloat = 5
-        
-        lay.frame = superBounds
-        let circleLayer = CAShapeLayer();
-        circleLayer.path = UIBezierPath(ovalIn: CGRect(x: spacing, y: 0, width: (superBounds.width / CGFloat(numberOfDots)) - spacing, height: superBounds.height)).cgPath;
-        circleLayer.fillColor = UIColor.systemBlue.cgColor
-        lay.addSublayer(circleLayer)
-        //    let bar = CALayer()
-        //    bar.frame = CGRect(x: 0,y: 0,width: superBounds.width / CGFloat(numberOfDots) ,height: superBounds.height)
-        //    bar.backgroundColor = UIColor.systemBlue.cgColor
-        //    layer.addSublayer(bar)
-        lay.instanceCount = numberOfDots
-        lay.instanceTransform = CATransform3DMakeTranslation(superBounds.width / CGFloat(numberOfDots), 0, 0)
-        let animation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
-        animation.fromValue = 1.0
-        animation.toValue = 0.2
-        animation.duration = 1
-        animation.repeatCount = .infinity
-        circleLayer.add(animation, forKey: nil)
-        lay.instanceDelay = animation.duration / Double(lay.instanceCount)
-    }
->>>>>>> master
 }
 

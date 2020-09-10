@@ -10,7 +10,6 @@ import UIKit
 
 class FriendPhotosCollectionViewController: UICollectionViewController {
     
-<<<<<<< HEAD
     var selectedFriend = Friend() { didSet {  allImagesURLOfAFriend = (selectedFriend.posts.compactMap{$0?.photoUrls}).flatMap{$0} } }
     
     //------
@@ -21,23 +20,15 @@ class FriendPhotosCollectionViewController: UICollectionViewController {
     
     //------
 
-=======
-    var selectedFriend = Friend()
-    
-//    var imageCounter = 1
->>>>>>> master
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-<<<<<<< HEAD
         
         
         
         
         
-=======
->>>>>>> master
         let width = (view.frame.size.width - 2 * 2 ) / 3 // TODO: put in constants
         
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
@@ -69,10 +60,7 @@ class FriendPhotosCollectionViewController: UICollectionViewController {
 //    }
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> master
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
 
@@ -85,17 +73,11 @@ class FriendPhotosCollectionViewController: UICollectionViewController {
 
         cell.configure(for: selectedFriend.posts[indexPath.row]!)
         
-<<<<<<< HEAD
-=======
-//        print(indexPath.row)
-        
->>>>>>> master
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let currentCell = collectionView.cellForItem(at: indexPath) as! FriendPhotosCollectionViewCell
-<<<<<<< HEAD
         
 //        ----OLD
 //        let postVC = storyboard?.instantiateViewController(withIdentifier: "PostFullSizeCollectionViewController") as! PostFullSizeCollectionViewController
@@ -111,12 +93,6 @@ class FriendPhotosCollectionViewController: UICollectionViewController {
         
         self.show(imageVC, sender: nil)
 
-=======
-        let postVC = storyboard?.instantiateViewController(withIdentifier: "PostFullSizeCollectionViewController") as! PostFullSizeCollectionViewController
-        postVC.selectedPost = currentCell.post
-        self.show(postVC, sender: nil)
-        //        print(delegate.debugDescription)
->>>>>>> master
     }
     
 
