@@ -402,36 +402,6 @@
             </objects>
             <point key="canvasLocation" x="5157" y="-13"/>
         </scene>
-        <!--Image Scroll View Controller-->
-        <scene sceneID="yDH-2b-NyT">
-            <objects>
-                <viewController storyboardIdentifier="ImageScrollViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LvV-pt-bYu" customClass="ImageScrollViewController" customModule="LoginForm" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cyO-aq-DtY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Th3-g8-g5O">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Th3-g8-g5O" firstAttribute="leading" secondItem="hlk-R7-pBz" secondAttribute="leading" id="2dr-1h-KhG"/>
-                            <constraint firstItem="Th3-g8-g5O" firstAttribute="top" secondItem="hlk-R7-pBz" secondAttribute="top" id="HCf-Pz-AyK"/>
-                            <constraint firstItem="hlk-R7-pBz" firstAttribute="trailing" secondItem="Th3-g8-g5O" secondAttribute="trailing" id="q6B-OS-624"/>
-                            <constraint firstItem="hlk-R7-pBz" firstAttribute="bottom" secondItem="Th3-g8-g5O" secondAttribute="bottom" id="y7r-6X-0Ww"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="hlk-R7-pBz"/>
-                    </view>
-                    <connections>
-                        <outlet property="imageView" destination="Th3-g8-g5O" id="kil-iF-HTe"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tEP-M3-NB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6054" y="-13"/>
-        </scene>
         <!--Groups Table View Controller-->
         <scene sceneID="Lpk-hB-EVd">
             <objects>
@@ -537,7 +507,7 @@
         <!--Friends-->
         <scene sceneID="Ylv-Kn-Ors">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mg3-BF-uQZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mg3-BF-uQZ" customClass="CustomNavigationController" customModule="LoginForm" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Friends" image="person" catalog="system" id="Dmv-mn-KNd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kns-Xz-t3o">
