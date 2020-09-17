@@ -145,6 +145,7 @@ class UserFriendsTableViewController: UITableViewController {
         let currentCell = tableView.cellForRow(at: indexPath) as! UserFriendsTableViewCell
         let friendPhotoVC = storyboard?.instantiateViewController(withIdentifier: "FriendPhotosCollectionViewController") as! FriendPhotosCollectionViewController
         friendPhotoVC.selectedFriend = currentCell.friend
+//        friendPhotoVC.friends = friends
         self.show(friendPhotoVC, sender: nil)
         
     }
